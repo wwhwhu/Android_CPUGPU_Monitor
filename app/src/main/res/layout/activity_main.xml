@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<Button
+    android:id="@+id/button_start_monitoring"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:text="开始监控" />
+
+    <Button
+        android:id="@+id/button_visual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="可视化" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="监控项"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#00008B"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- CPU Switches -->
+        <Switch
+            android:id="@+id/switch_cpu0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU0" />
+
+        <Switch
+            android:id="@+id/switch_cpu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU1" />
+        <Switch
+            android:id="@+id/switch_cpu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU2" />
+        <Switch
+            android:id="@+id/switch_cpu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU3" />
+
+        <Switch
+            android:id="@+id/switch_cpu4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU4" />
+        <Switch
+            android:id="@+id/switch_cpu5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU5" />
+        <Switch
+            android:id="@+id/switch_cpu6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU6" />
+
+        <Switch
+            android:id="@+id/switch_cpu7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CPU7" />
+
+        <Switch
+            android:id="@+id/switch_gpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="GPU" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="平台说明"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#00008B"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Switch
+            android:id="@+id/switch_isMali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="isMali" />
+
+        <Switch
+            android:id="@+id/switch_isAdreno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="isAdreno" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="监控指标"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#00008B"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Switch
+            android:id="@+id/switch_usage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="利用率" />
+
+        <Switch
+            android:id="@+id/switch_freq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="频率" />
+
+        <Switch
+            android:id="@+id/switch_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="温度" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
